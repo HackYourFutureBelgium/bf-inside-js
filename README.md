@@ -139,7 +139,7 @@
     3. **Parent Scope Variables**: A variable that was declared outside of the
        function but used inside the function (avoid this for now.)
 
-### [5. Unit Testing](./5-unit-testing)
+### [4. Unit Testing](./5-unit-testing)
 
 - **Skills**:
   - [ ]  **Testing Environments**: You understand that the conventional
@@ -165,7 +165,7 @@
 - **Language Features**:
   - nothing new here!
 
-### [6. ES Modules](./6-es-modules)
+### [5. ES Modules](./6-es-modules)
 
 - **Skills**:
   - [ ]  **Spec Files**: You can work with functions and unit tests separated
