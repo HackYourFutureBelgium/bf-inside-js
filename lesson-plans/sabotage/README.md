@@ -2,8 +2,6 @@
 
 A fun lesson. You'll form groups of 3 and study different coding challenges:
 
-## Before Break
-
 - _~30 min_: In your groups, pick a coding challenge you want to study.
   - Write tests for it
   - Pass the tests (in more than one way if you have time)
@@ -20,7 +18,3 @@ A fun lesson. You'll form groups of 3 and study different coding challenges:
   - what went well
   - what went less well
   - lessons learned
-
-## After Break
-
-Do it again! with different groups and different challenges.
