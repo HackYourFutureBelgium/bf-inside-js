@@ -324,6 +324,9 @@
 
 <details>
 <summary>expand/collapse</summary>
-<br>
+
+#### Week 1
+
+- [day 1](https://youtu.be/FDJFXPhU8iU)
 
 </details>
