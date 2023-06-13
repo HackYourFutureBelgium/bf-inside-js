@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // `=` and `===` look similar, but do VERY different things!
@@ -30,6 +28,6 @@ console.log(typeof thirdComparison, thirdComparison);
 
 // `=` assignments cannot be written either way
 //  Invalid left-hand side in assignment
-// 'value 2' = variable; // uncomment this line for an error
+'value 2' = variable; // uncomment this line for an error
 
 console.log('-- end --');
