@@ -14,6 +14,7 @@ const logTheParameter = (parameter) => {
 logTheParameter('4');
 logTheParameter(4.0);
 logTheParameter('4.0');
+logTheParameter(4);
 
 // or indirectly using variables
 const arg1 = true;
@@ -24,6 +25,10 @@ logTheParameter(arg2);
 
 const arg3 = undefined;
 logTheParameter(arg3);
+
+const arg4 = true;
+logTheParameter(arg4);
+
 
 // if no argument is passed, parameters will be undefined
 logTheParameter();

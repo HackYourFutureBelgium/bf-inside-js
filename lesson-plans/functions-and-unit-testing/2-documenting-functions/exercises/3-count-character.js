@@ -3,8 +3,14 @@
 console.log('-- begin --');
 
 /**
+ * Counts the number of occurrences of a specific character in a given text.
  *
+ * @param {string} text - The text to search for character occurrences.
+ * @param {string} toCount - The character to count occurrences of.
+ * @returns {number} - The count of occurrences of the character in the text.
+ *                     Returns -1 if the toCount parameter is not a single character.
  */
+
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
     return -1;
