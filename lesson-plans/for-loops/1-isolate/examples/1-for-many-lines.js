@@ -1,5 +1,3 @@
-// #todo
-
 // 1: use strict (in JSTutor)
 'use strict';
 
