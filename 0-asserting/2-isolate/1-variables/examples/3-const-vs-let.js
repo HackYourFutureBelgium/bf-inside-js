@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -14,8 +12,8 @@ console.log('-- begin --');
 //  this is a "creation phase" error, meaning the code will not even execute!
 // uncomment the next two lines of code to get the error
 
-// const constantVariable1;
-// console.log(constantVariable1);
+const constantVariable1;
+console.log(constantVariable1);
 
 // const variables also cannot be reassigned
 // this will throw an error
