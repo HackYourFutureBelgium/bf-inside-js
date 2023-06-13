@@ -317,6 +317,10 @@
 
 <details>
 <summary>expand/collapse</summary>
-<br>
+
+#### Week 1
+
+- [day 1](https://youtu.be/FDJFXPhU8iU)
+- [day 2](https://youtu.be/7ulPCWBQc-4)
 
 </details>
