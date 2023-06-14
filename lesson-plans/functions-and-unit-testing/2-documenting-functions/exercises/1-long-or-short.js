@@ -2,13 +2,6 @@
 
 console.log('-- begin --');
 
-/**
- * _
- *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
- */
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
     return 'short';
