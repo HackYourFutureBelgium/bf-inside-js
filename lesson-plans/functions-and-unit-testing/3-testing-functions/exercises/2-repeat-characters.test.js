@@ -7,7 +7,9 @@
  * @param {number} repeats - How many times to repeat each character.
  * @returns {string} The string with repeated characters.
  */
-const repeatCharacters = () => {};
+const repeatCharacters = (text, repeat) => {
+  return text.repeat(repeat);
+};
 
 describe('repeatCharacters: repeats each character in a string', () => {
   it('repeats characters 0 times', () => {
@@ -20,11 +22,11 @@ describe('repeatCharacters: repeats each character in a string', () => {
   });
   it('repeats characters 2 times', () => {
     const returned = repeatCharacters('Hi', 2);
-    expect(returned).toEqual('HHii');
+    expect(returned).toEqual('HiHi');
   });
   it('repeats characters 3 times', () => {
     const returned = repeatCharacters('abc', 3);
-    expect(returned).toEqual('aaabbbccc');
+    expect(returned).toEqual('abcabcabc');
   });
   it('repeats characters in an empty string 12 times', () => {
     const returned = repeatCharacters('', 12);

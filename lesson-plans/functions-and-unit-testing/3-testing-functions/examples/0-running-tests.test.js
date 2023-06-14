@@ -1,5 +1,4 @@
 'use strict';
-
 /* Running Tests
 
   For the first time, you will be using code that relies on LIBRARIES
