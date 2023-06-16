@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -26,8 +24,8 @@ console.log('-- begin --');
 */
 
 // try different values to see what happens
-let a = _;
-let b = _;
+let a = 'hello';
+let b = 5;
 
 const realPlus = a + b;
 
