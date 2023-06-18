@@ -7,13 +7,13 @@
 
 ## Week 2
 
+- [Functional Array Methods](./functional-array-methods?--defaults)
 - [Side-Effects](./side-effects?--defaults)
-- [Group Project Intro](./group-project-intro?--defaults)
-- [Util Functions](./util-functions?--defaults)
   
 ## Week 3
 
-- [Functional Array Methods](./functional-array-methods?--defaults)
+- [Group Project Intro](./group-project-intro?--defaults)
 - [Sabotage!](./sabotage?--defaults)
+- [Util Functions](./util-functions?--defaults)
 
 ## week 4
