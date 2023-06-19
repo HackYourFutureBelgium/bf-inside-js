@@ -1,13 +1,7 @@
 'use strict';
-
+// function to check if a wort is palindrome
 console.log('-- begin --');
 
-/**
- * _
- *
- * @_ {_} _ - _
- * @_ {_}  _
- */
 const isPalindrome = (toCheck) => {
   let reversed = '';
   for (const character of toCheck) {

@@ -2,9 +2,6 @@
 
 console.log('-- begin --');
 
-/**
- *
- */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
     return -1;

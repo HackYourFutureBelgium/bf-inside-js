@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // NaN is a strange thing in JavaScript
