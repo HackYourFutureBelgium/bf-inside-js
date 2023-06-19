@@ -4,12 +4,12 @@
 
 console.log('-- begin --');
 
-/**
- * _
+/** 
+ * - ??? 
  *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * @param {string} [text = ''] - the left operand
+ * @param {number} [cutoff = 0 ] - the right operand
+ * @return { string } result 
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {

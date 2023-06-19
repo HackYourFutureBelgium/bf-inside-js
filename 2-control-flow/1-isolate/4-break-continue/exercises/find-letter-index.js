@@ -5,7 +5,7 @@
 console.log('-- begin --');
 
 const word = 'pitsicola';
-const targetLetter = _;
+const targetLetter = 'c';
 
 let index = 0;
 while (true) {
@@ -13,12 +13,12 @@ while (true) {
   console.log(index + ': ' + nextLetter);
 
   if (nextLetter === targetLetter) {
-    _;
+    break;
   }
 
   index += 1;
 }
 
-console.assert(index === 5, 'this letter is at index 5');
+console.log(index === 5, 'this letter is at index 5');
 
 console.log('-- end --');

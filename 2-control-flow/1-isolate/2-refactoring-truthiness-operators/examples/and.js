@@ -1,8 +1,8 @@
 'use strict';
 
 // experiment with different values
-const a = _;
-const b = _;
+const a = false;
+const b = true;
 
 // "and" expression
 const andValue = a && b;

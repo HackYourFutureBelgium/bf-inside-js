@@ -13,10 +13,10 @@ console.log('-- begin --');
 const originalString = 'abcde';
 console.log('originalString:', originalString);
 
-let reverseUpperCase = '';
-
-for (_; _; _) {
-  // a blank canvas :)
+let reverseUpperCase = ''
+for (let i = originalString.length - 1; i >= 0 ; i--) {
+  let nextLetter = originalString[i];
+  reverseUpperCase += nextLetter.toUpperCase();
 }
 
 console.assert(

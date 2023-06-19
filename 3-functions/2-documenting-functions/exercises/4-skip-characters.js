@@ -5,7 +5,13 @@
 console.log('-- begin --');
 
 /**
- *
+ * - skip characters in string
+ * 
+ * @param {string} text - original string
+ * 
+ * @param {number} toSkip - step of missing characters 
+ * 
+ *@returns {string} new string without characters which deleted  
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {

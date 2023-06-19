@@ -20,14 +20,14 @@ console.log('-- begin --');
 */
 
 // try changing this variable's value and see what happens
-const value = 123;
+
 // const value = '123';
 // const value = true;
 // const value = undefined;
 // const value = null;
 // const value = 'hello';
 // const value = NaN;
-
+const value = 123;
 let path = '';
 
 // evaluate the comparison behind the scenes

@@ -5,10 +5,10 @@
 console.log('-- begin --');
 
 /**
- * _
+ * check if the string polirome
  *
- * @_ {_} [_=_] - _
- * @_ {_}  _
+ * @param {string} [toCheck = string] - sreing to check if polidrome
+ * @return {string}  reversed original string
  */
 const isPalindrome = (toCheck = '') => {
   let reversed = '';

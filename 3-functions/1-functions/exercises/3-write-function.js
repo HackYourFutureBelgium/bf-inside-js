@@ -6,7 +6,9 @@ console.log('-- begin --');
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-const scramble = () => {};
+const scramble = (a, b, c) => {
+  return c + a + b;
+};
 
 const _1_expect = 'yxz';
 const _1_actual = scramble('x', 'z', 'y');

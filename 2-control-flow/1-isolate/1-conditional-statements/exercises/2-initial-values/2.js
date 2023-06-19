@@ -9,8 +9,8 @@ console.log('-- begin --');
 //  what do all the solutions have in common?
 // or maybe the asserted path is unreachable!
 
-const value1 = _;
-const value2 = _;
+const value1 = 100;
+const value2 = '100';
 let path = '';
 
 if (value1 === value2) {

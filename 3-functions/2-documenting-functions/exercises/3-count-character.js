@@ -5,8 +5,14 @@
 console.log('-- begin --');
 
 /**
- *
+ * - count letters in string
+ * 
+ * @param {string} text - searching string
+ * @param {string} letter - the letter to be counted in the string
+ * 
+ * return {number} - conter number
  */
+
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;

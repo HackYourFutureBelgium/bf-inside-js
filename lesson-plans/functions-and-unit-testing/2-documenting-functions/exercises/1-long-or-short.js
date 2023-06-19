@@ -3,11 +3,11 @@
 console.log('-- begin --');
 
 /**
- * _
- *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
+ * This function checks if the number of letters in the text is less than the number specified in the second parameter
+ * 
+ * @param {string} text - The string to check
+ * @param {number} cutoff - Number to compare against the length of the text
+ * @returns {string} - 'short' if text shorter than number else 'long'
  */
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {

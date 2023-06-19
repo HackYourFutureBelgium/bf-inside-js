@@ -19,18 +19,19 @@ console.log('-- begin --');
   how many can you find?
   what do all the correct answers have in common?
 */
-let sum = _;
+let sum = 1;
 
 while (sum < 100) {
   if (sum % 2 === 0) {
     sum += sum;
     console.log('if path:', sum);
   } else {
-    sum += 1;
+    sum++;
     console.log('else path:', sum);
   }
 }
 
 console.assert(sum === 128, 'the sum should be 128');
+
 
 console.log('-- end --');

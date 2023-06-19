@@ -4,7 +4,12 @@ console.log('-- begin --');
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-const scramble = () => {};
+// we add 3 parameters to the function and add the summation of three parameters in the scope of the function in the order 3+2+1
+
+const scramble = (param1, param2, param3) => {
+  const result = param3 + param1 + param2;
+  return result
+};
 
 const _1_expect = 'yxz';
 const _1_actual = scramble('x', 'z', 'y');

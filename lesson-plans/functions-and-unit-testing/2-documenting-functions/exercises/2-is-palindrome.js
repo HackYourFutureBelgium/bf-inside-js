@@ -3,10 +3,10 @@
 console.log('-- begin --');
 
 /**
- * _
+ * Checks if a string is a palidrome
  *
- * @_ {_} _ - _
- * @_ {_}  _
+ * @param {string} toCheck - string to check 
+ * @returns {string} bool value if the string is a polydrome true or false
  */
 const isPalindrome = (toCheck) => {
   let reversed = '';

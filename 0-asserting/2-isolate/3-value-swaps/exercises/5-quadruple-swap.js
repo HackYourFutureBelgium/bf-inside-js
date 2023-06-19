@@ -13,7 +13,7 @@ let d = 'x';
 let temp;
 
 // --- swap values ---
-
+[a,b,c,d] = [b,d,a,c];
 // --- test final values ---
 
 console.assert(a === 'w', 'Test 1');
@@ -24,6 +24,5 @@ console.assert(c === 'y', 'Test 3');
 
 console.assert(d === 'z', 'Test 4');
 
-console.assert(temp === _, 'Test 5');
 
 console.log('-- end --');

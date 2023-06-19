@@ -20,14 +20,14 @@ console.log('-- begin --');
 
 */
 
-const value = 123;
+
 // const value = '123';
 // const value = true;
 // const value = undefined;
 // const value = null;
 // const value = 'hello';
 // const value = NaN;
-
+const value = 123;
 let path = '';
 
 if (typeof value === 'number') {

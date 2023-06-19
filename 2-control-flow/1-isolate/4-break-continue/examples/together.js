@@ -10,17 +10,17 @@ console.log('-- begin --');
 
 */
 
-const max = 0;
+// const max = 0;
 // const max = 1;
 // const max = 2;
 // const max = 3;
-// const max = 4;
+const max = 4;
 
 let iterations = 0;
 while (true) {
   console.log('begin loop');
 
-  iterations = iterations + 1;
+  iterations++;
 
   if (iterations % 2 === 0) {
     console.log('continue to next iteration');

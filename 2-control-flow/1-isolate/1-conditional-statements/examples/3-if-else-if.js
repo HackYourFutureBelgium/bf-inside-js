@@ -21,13 +21,13 @@ console.log('-- begin --');
 
 */
 
-const value = 123;
 // const value = '123';
-// const value = true;
+const value = true;
 // const value = undefined;
 // const value = null;
 // const value = 'hello';
 // const value = NaN;
+// const value = 123;
 
 let path = '';
 
@@ -37,6 +37,8 @@ if (typeof value === 'number') {
 } else if (typeof value === 'boolean') {
   console.log('value is a boolean');
   path = 'else if';
+} else {
+  console.log('Norhing');
 }
 
 console.log(path);

@@ -3,7 +3,12 @@
 console.log('-- begin --');
 
 /**
- *
+ * is there an element passed to parameter 2 in the string
+ * 
+ * @param {string} text - The string to check
+ * @param {string} toCount - Part of string to check for presence in string
+ * 
+ * @returns {number} - the number of times parameter 2 occurs in parameter 1
  */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
