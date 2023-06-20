@@ -335,4 +335,7 @@
 
 #### Week 2
 
+- [day 6](https://youtu.be/1M5qfVAn4zE)
+- [day 7](https://youtu.be/FX5D14oyOi4)
+
 </details>
