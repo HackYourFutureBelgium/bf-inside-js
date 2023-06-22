@@ -337,5 +337,7 @@
 
 - [day 6](https://youtu.be/1M5qfVAn4zE)
 - [day 7](https://youtu.be/FX5D14oyOi4)
+- [day 8](https://youtu.be/MKKoPOtYc90)
+- [day 9](https://youtu.be/KpV81FjH7Mc)
 
 </details>
