@@ -341,4 +341,9 @@
 - [day 9](https://youtu.be/KpV81FjH7Mc)
 - [day 10](https://youtu.be/CMtwa_wJFMU)
 
+#### Week 3
+
+- [day 11](https://youtu.be/7Rdqb-lf1Dg)
+- [day 12](https://youtu.be/vsQik7WcQDs)
+
 </details>
