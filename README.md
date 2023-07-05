@@ -346,4 +346,10 @@
 - [day 11](https://youtu.be/7Rdqb-lf1Dg)
 - [day 12](https://youtu.be/vsQik7WcQDs)
 
+#### Week 4
+
+- [DOM](https://youtu.be/4Ki-CkRblHk)
+- [separation of concerns 1](https://youtu.be/elHVVwIw8-M)
+- [separation of concerns 2](https://youtu.be/DwtsVfoAlrw)
+
 </details>
