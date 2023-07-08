@@ -351,5 +351,7 @@
 - [DOM](https://youtu.be/4Ki-CkRblHk)
 - [separation of concerns 1](https://youtu.be/elHVVwIw8-M)
 - [separation of concerns 2](https://youtu.be/DwtsVfoAlrw)
+- [separation of concerns 3](https://youtu.be/iUm4LP6eQs0)
+- [separation of concerns 4](https://youtu.be/As4Xx9yzU4I)
 
 </details>
