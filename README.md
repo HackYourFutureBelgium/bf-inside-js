@@ -319,39 +319,3 @@
         reference with an example that modifies one object from two variables.
 
 [TOP](#inside-js)
-
-### class recording
-
-<details>
-<summary>expand/collapse</summary>
-
-#### Week 1
-
-- [day 1](https://youtu.be/FDJFXPhU8iU)
-- [day 2](https://youtu.be/7ulPCWBQc-4)
-- [day 3](https://youtu.be/hBx2KADvxZI)
-- [day 4](https://youtu.be/M1qog0vPHDw)
-- [day 5](https://youtu.be/NsMNs-B5rgQ)
-
-#### Week 2
-
-- [day 6](https://youtu.be/1M5qfVAn4zE)
-- [day 7](https://youtu.be/FX5D14oyOi4)
-- [day 8](https://youtu.be/MKKoPOtYc90)
-- [day 9](https://youtu.be/KpV81FjH7Mc)
-- [day 10](https://youtu.be/CMtwa_wJFMU)
-
-#### Week 3
-
-- [day 11](https://youtu.be/7Rdqb-lf1Dg)
-- [day 12](https://youtu.be/vsQik7WcQDs)
-
-#### Week 4
-
-- [DOM](https://youtu.be/4Ki-CkRblHk)
-- [separation of concerns 1](https://youtu.be/elHVVwIw8-M)
-- [separation of concerns 2](https://youtu.be/DwtsVfoAlrw)
-- [separation of concerns 3](https://youtu.be/iUm4LP6eQs0)
-- [separation of concerns 4](https://youtu.be/As4Xx9yzU4I)
-
-</details>
