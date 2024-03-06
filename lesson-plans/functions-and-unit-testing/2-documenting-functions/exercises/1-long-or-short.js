@@ -3,18 +3,19 @@
 console.log('-- begin --');
 
 /**
- * _
+ * _.
  *
- * @_ {_} _ - _
+ * @param text
+ * @param cutoff
+ * @_ {string}
  * @_ {_} _ - _
  * @_ {_} _
  */
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
     return 'short';
-  } else {
-    return 'long';
   }
+  return 'long';
 };
 
 const _1_expect = 'long';
