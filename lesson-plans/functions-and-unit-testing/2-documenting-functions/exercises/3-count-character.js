@@ -3,7 +3,10 @@
 console.log('-- begin --');
 
 /**
- *
+ * count how many time a charachter repedted in a string
+ * @param {string} text : text to check
+ * @param {string} toCount : the char to check for repetattion
+ * @return {number}
  */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {

@@ -4,7 +4,10 @@ console.log('-- begin --');
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-const scramble = () => {};
+const scramble = (param1 , param2 , param3) => {
+ let result = param3 + param1 + param2
+ return result
+};
 
 const _1_expect = 'yxz';
 const _1_actual = scramble('x', 'z', 'y');
@@ -19,3 +22,4 @@ const _3_actual = scramble('z', 'x', 'y');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 console.log('-- end --');
+ 
