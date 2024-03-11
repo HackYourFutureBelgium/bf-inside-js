@@ -6,7 +6,7 @@
 
 let count = 0;
 for (let i = 0; i < 5; i++) {
-  count = count + i;
+  count = count + i; // this body will pass the assertion
 }
 console.log(count === 10);
 
