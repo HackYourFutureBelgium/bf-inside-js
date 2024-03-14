@@ -1,6 +1,6 @@
 'use strict';
 console.log('-- begin --');
-
+debugger;
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 

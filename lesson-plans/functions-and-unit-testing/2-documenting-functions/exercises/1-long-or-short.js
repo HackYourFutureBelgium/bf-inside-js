@@ -5,10 +5,12 @@ console.log('-- begin --');
 /**
  * _
  *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
+ * @param {string} text - the string to check the character
+ * @param {number} number - the string to check the number
+ * @returns {string} text -
  */
+
+
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
     return 'short';

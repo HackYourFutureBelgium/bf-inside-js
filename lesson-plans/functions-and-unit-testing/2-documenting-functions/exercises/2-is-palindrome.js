@@ -5,8 +5,8 @@ console.log('-- begin --');
 /**
  * _
  *
- * @_ {_} _ - _
- * @_ {_}  _
+ * @param {string} text - to check the string value
+ * @return {boolean}  true or false _
  */
 const isPalindrome = (toCheck) => {
   let reversed = '';
