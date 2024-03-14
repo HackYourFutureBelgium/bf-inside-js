@@ -7,7 +7,7 @@ console.log('-- begin --');
  *
  * @param {string} text - the string to check the character
  * @param {number} number - the string to check the number
- * @returns {string} text -
+ * @returns {string} text long or short
  */
 
 
