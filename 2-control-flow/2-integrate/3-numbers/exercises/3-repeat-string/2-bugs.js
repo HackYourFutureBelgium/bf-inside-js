@@ -11,8 +11,8 @@
 
 */
 
-const userInput = '';
-const repetitions = NaN;
+let userInput = '';
+let repetitions = NaN;
 while (true) {
   userInput = prompt('enter a phrase to repeat:');
 
@@ -23,7 +23,7 @@ while (true) {
 
   const repetitionsInput = prompt('how many times do you want to repeat it?');
 
-  repetitions = Number(repetitionsInput);
+  repetitions = parseInt(repetitionsInput);
 
   if (Number.isNaN(repetitions)) {
     alert('"' + repetitionsInput + '" is not a number');
@@ -33,12 +33,15 @@ while (true) {
   const confirmMessage =
     'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + repetitions;
   const confirmation = confirm(confirmMessage);
-}
+  if (confirmation)
+{
+  break;
+}}
 
 let repeatedInput = '';
 
-for (let i = 1; i < repetitions; i++) {
-  repeatedInput = userInput;
+for (let i = 0; i < repetitions; i++) {
+  repeatedInput += userInput;
 }
 
-alert(`"userInput" -> "repeatedInput"`);
+alert(userInput +' -> '+ repeatedInput);

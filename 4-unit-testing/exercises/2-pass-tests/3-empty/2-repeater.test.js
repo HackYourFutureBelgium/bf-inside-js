@@ -8,7 +8,13 @@
  * @param {number} [repeats=_] - ___
  * @returns {string} ___
  */
-__;
+const repeat = ( text = '', repeats = 1 ) => {
+ let repeated = '';
+ for (let i = 0; i < repeats ; i++){
+   repeated += text;
+ }
+ return repeated
+};
 
 describe('repeater: repeats a string a specific number of times', () => {
   it('can repeat a string once', () => {
@@ -21,7 +27,7 @@ describe('repeater: repeats a string a specific number of times', () => {
   });
   it('repeating the empty string is still empty', () => {
     const actual = repeat('', 12);
-    expect(actual).toEqual('PpPpPpPp');
+    expect(actual).toEqual('');
   });
   it('repeating anything 0 times is the empty string', () => {
     const actual = repeat('hoy!', 0);

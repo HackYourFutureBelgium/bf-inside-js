@@ -13,20 +13,20 @@ alert(instructions);
 
 let sum = 0;
 let inputCount = 0;
-
 let stillEnteringNumbers = true;
+
 while (stillEnteringNumbers) {
-  const userInput = prompt('_');
+  const userInput = prompt('Please enter a number');
   console.log('userInput:', typeof userInput, userInput);
 
   if (userInput === '' || userInput === null) {
     alert('nothing is not allowed');
-    _;
+    continue;
   }
 
   if (userInput.toLowerCase() === 'done') {
     stillEnteringNumbers = false;
-    _;
+    break;
   }
 
   const nextNumber = Number(userInput);
@@ -34,17 +34,17 @@ while (stillEnteringNumbers) {
 
   if (Number.isNaN(nextNumber)) {
     alert('"' + userInput + '" is not a number, it has been ignored');
-    _;
+    continue;
   }
 
-  sum = _;
+  sum += nextNumber;
   console.log('sum:', typeof sum, sum);
 
-  inputCount = _;
+  inputCount ++;
   console.log('inputCount:', typeof inputCount, inputCount);
 }
 
-const average = _;
+const average = sum / inputCount;
 console.log('average:', typeof average, average);
 
 const averageMessage = 'the average of your numbers is: ' + average;

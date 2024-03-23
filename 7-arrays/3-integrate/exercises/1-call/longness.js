@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-import { filterByLength } from '__';
+import { filterByLength } from '../utils/filter-by-length.js';
 
 /* ===== main program (use functions) ===== */
 

@@ -38,7 +38,7 @@ console.log('-- begin --');
  * @param {any} value - The value to check.
  * @returns {string} - The type of the parameter.
  */
-const findTheType = (value) => {
+const findTheType = (value = true) => {
   return typeof value;
 };
 

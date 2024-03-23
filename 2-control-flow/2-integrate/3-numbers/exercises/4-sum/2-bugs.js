@@ -24,7 +24,7 @@ let isDone = false;
 while (!isDone) {
   userInput = prompt('enter a number to add, or "done" to finish');
 
-  if (userInput === '' && userInput === null) {
+  if (userInput === '' || userInput === null) {
     alert('nothing is not allowed');
   } else if (userInput.toLowerCase() === 'DONE') {
     isDone = true;

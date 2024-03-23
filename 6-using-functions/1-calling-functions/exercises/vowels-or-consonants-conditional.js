@@ -27,12 +27,12 @@ if (removeVowels) {
   const vowels = 'aeiouAEIOU';
   // use `removeCharacters` to create a new value with no vowels
   //  initialize this value in `removified`
-  __;
+  removified = removeCharacters(original, vowels);
 } else {
   const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
   // use `removeCharacters` to create a new value with no consonants
   //  initialize this value in `removified`
-  __;
+  removified = removeCharacters(original, consonants);
 }
 
 alert(`before: ${original} \nafter: ${removified}`);

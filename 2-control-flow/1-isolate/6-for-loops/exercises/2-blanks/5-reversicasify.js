@@ -7,21 +7,37 @@ console.log('-- begin --');
 /* Reversicasify
 
   you can use for loops to do some logic for each element in a string
-
 */
 
-const originalString = 'abcde';
+let originalString = 'abcde';                  
 console.log('originalString:', originalString);
 
-let reverseUpperCase = '';
+let reverseString = '';
 
-for (_; _; _) {
-  // a blank canvas :)
+for (let i = originalString.length -1 ; i >= 0; i--) {
+
+ const newLetter = originalString[i];
+ reverseString +=newLetter;
+ console.log(i);
+ console.log('reverseString', reverseString);
+
 }
 
-console.assert(
-  reverseUpperCase === 'EDCBA',
-  'reversed string is the original reversed',
-);
+ let upperCasedString = '';
 
-console.log('-- end --');
+ for(let i = 0 ; i < reverseString.length ; i++){
+   const newUpperCased = reverseString[i].toUpperCase();
+   upperCasedString += newUpperCased
+
+   console.log(i);
+   console.log('upperCasedString', upperCasedString);
+
+ 
+}
+console.assert(
+  reverseString === 'edcba', 'reversed string is the original reversed',
+  );
+
+console.assert(
+  upperCasedString === 'EDCBA', 'upper case string is all upper case',
+  );

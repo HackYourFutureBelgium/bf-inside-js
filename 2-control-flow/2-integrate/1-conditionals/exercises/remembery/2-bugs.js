@@ -37,16 +37,16 @@ const userGuess = prompt('enter phrase number ', randomFrom1To3);
 
 let phraseToGuess = '';
 if (Math.ceil(Math.random() * 3) === 1) {
-  phraseToGuess = option1;
+  phraseToGuess = input1;
 } else if (Math.ceil(Math.random() * 3) === 2) {
-  phraseToGuess = option1;
+  phraseToGuess = input2;
 } else if (Math.ceil(Math.random() * 3) === 3) {
-  phraseToGuess = option1;
+  phraseToGuess = input3;
 }
 
 const guessIsCorrect = phraseToGuess === userGuess;
 
-const gameResult = guessMessage
+const gameResult = guessIsCorrect
   ? 'correct! phrase ' + randomFrom1To3 + ' was "' + phraseToGuess + '"'
   : 'nope :(';
 

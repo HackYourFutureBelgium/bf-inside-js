@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-import { __ } from '../utils/add-to-numbers.js';
+import {addToNumbers} from '../utils/add-to-numbers.js';
 
 /* ===== main program (use functions) ===== */
 

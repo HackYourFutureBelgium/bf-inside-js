@@ -13,28 +13,35 @@ alert(instructions);
 let sum = 0;
 
 let userInput = '';
+
 while (true) {
   userInput = prompt('enter a number to add, or "done" to finish');
   console.log('userInput:', typeof userInput, userInput);
 
   // make sure the user input something
-  ___;
+  if (userInput === null){
+    alert('You must input something!')
+    continue; 
+  };
 
   // check if the user input is "done", case-insensitive
-  if (_) {
+  if (/done/i.test(userInput)) {
     break;
   }
 
   const nextNumber = Number(userInput);
+
   console.log('nextNumber:', typeof nextNumber, nextNumber);
 
   // continue if the input is not a number
-  ___;
+  if(Number.isNaN(nextNumber)){
+    continue;
+  };
 
   // add the new number to the sum
-  _;
+  sum += nextNumber;
   console.log('sum:', typeof sum, sum);
 }
 
-const sumMessage = 'the sum of your numbers is: ' + sum;
+const sumMessage = 'The sum of your numbers is: ' + sum;
 alert(sumMessage);

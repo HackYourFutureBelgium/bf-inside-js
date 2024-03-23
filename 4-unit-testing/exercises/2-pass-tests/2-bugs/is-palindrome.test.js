@@ -10,11 +10,11 @@
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let reversed = ' ';
+  let reversed = '';
   for (const character of toCheck) {
-    reversed += character + reversed;
+    reversed = character + reversed ;
   }
-  return (toCheck = reversed);
+  return toCheck === reversed;
 };
 
 describe('isPalindrome: checks if a string is the same forwards and backwards', () => {

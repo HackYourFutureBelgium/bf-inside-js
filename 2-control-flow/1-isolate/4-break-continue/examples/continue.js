@@ -12,7 +12,7 @@ console.log('-- begin --');
 
 */
 
-const max = 0;
+const max = 6;
 // const max = 1;
 // const max = 2;
 // const max = 3;

@@ -17,7 +17,7 @@ export const numberyNumberify = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const allValidNumbers = arr._(_)._(_);
+  const allValidNumbers = arr.map((item) => castToNumber(item)).filter((item) => isNotNaN(item));
 
   return allValidNumbers;
 };

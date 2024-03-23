@@ -11,15 +11,34 @@ const instructions =
 alert(instructions);
 
 let sum = 0;
-
 let userInput = '';
 let isDone = false;
+
 while (!isDone) {
   userInput = prompt('enter a number to add, or "done" to finish');
 
   /* -- BEGIN: handle user input - nothing, done, a number or not a number -- */
+    if (userInput === null){
+      alert('You must input something!');
+      continue;
+    }
+
+    userInput = userInput.trim();
+
+    if (userInput.toLowerCase() === 'done'){
+      isDone = true;
+      continue;
+    }
+    const nextNumber = Number(userInput);
+
+    if(Number.isNaN(nextNumber)){
+      console.log('Ignoring input:', userInput)
+      continue;
+    }
+  sum += nextNumber;
+  console.log('Sum:', sum);
+  }
   /* -- END -- */
-}
 
 const sumMessage = 'the sum of your numbers is: ' + sum;
 alert(sumMessage);

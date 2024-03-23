@@ -14,12 +14,12 @@ const sumOfDigits = (toSum = 0) => {
   let sum = 0;
   for (const character of digitsToSum) {
     const digit = Number(character);
-    if (Number.isNaN(digit)) {
-      sum += sum + digit;
+    if (!Number.isNaN(digit)) {
+      sum = sum + digit;
     }
   }
 
-  return toSum > 0 ? sum : sum;
+  return toSum >= 0 ? sum : -sum;
 };
 
 describe('sumOfDigits: sums the digits in a number', () => {

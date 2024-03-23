@@ -30,7 +30,7 @@ const arg2 = 'y';
 
 // 10: flipper is executed, creating a new frame
 //    parameters are assigned values from arg1 & arg2
-const result2 = flipper(arg1, arg2);
+const result2 = flipper(arg1, arg2);    // const result2 = flipper('x', 'y')
 
 // 13: the value of result2 is compared to the expected value
 const test2 = result2 === 'yx';

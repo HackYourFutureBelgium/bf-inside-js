@@ -19,8 +19,9 @@ let a = 0;
 // 3, 5, 7, 9, 11: evaluate the condition
 while (a < 4) {
   // 4, 6, 8, 10: increment a
-  a = a + 1;
+ 
   console.log(a);
+   a = a + 1;
 }
 
 // 12: assert a

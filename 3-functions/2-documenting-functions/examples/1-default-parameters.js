@@ -50,34 +50,35 @@ const repeater = (stringParam = '', numberParam = 0) => {
   return result;
 };
 
-// passing two argumens with the correct types
-const repeated1 = repeater('yoy', 3);
-console.log('-- repeated1:', typeof repeated1, repeated1);
+// passing two argumens with the correct types                  // stringParam: string yoy
+const repeated1 = repeater('yoy', 3);                            // numberParam: number 3
+console.log('-- repeated1:', typeof repeated1, repeated1);      // repeated: string yoyyoyyoy
 
-// passing only the first string argument
-const repeated2 = repeater('yoy');
-console.log('-- repeated2:', typeof repeated2, repeated2);
+// passing only the first string argument                       // stringParam: string yoy
+const repeated2 = repeater('yoy');                              // numberParam: number 0
+console.log('-- repeated2:', typeof repeated2, repeated2);      //repeated: string
 
-// passing only a number (wait, what! stringParam is assigned this number?)
-const repeated3 = repeater(2);
-console.log('-- repeated3:', typeof repeated3, repeated3);
+// passing only a number (wait, what! stringParam is assigned this number?) // stringParam: string 2
+const repeated3 = repeater(2);                                              // numberParam: number 0
+console.log('-- repeated3:', typeof repeated3, repeated3);                  //repeated: string
 
-// passing no arguments.  default values to the rescue!
-const repeated4 = repeater();
-console.log('-- repeated4:', typeof repeated4, repeated4);
+// passing no arguments.  default values to the rescue!                //stringParam: string 
+const repeated4 = repeater();                                          //numberParam: number 0
+console.log('-- repeated4:', typeof repeated4, repeated4);             // repeated: string 
 
 /* default values are only used if no argument is passed
   they also hint to the developer what type should be passed
   but JavaScript will not stop you from passing the wrong types
 */
 
-// passing the wrong type for stringParam
-const repeated5 = repeater(null, 4);
-console.log('-- repeated5:', typeof repeated5, repeated5);
+// passing the wrong type for stringParam                          //stringParam: object null
+const repeated5 = repeater(null, 4);                               //numberParam: number 4
+console.log('-- repeated5:', typeof repeated5, repeated5);         // repeated: string nullnullnullnull
 
-// passing the wrong type for numberParam
-const repeated6 = repeater('horse', false);
-console.log('-- repeated6:', typeof repeated6, repeated6);
+// passing the wrong type for numberParam                          //stringParam: string horse
+const repeated6 = repeater('horse', false);                        //numberParam: boolean false
+console.log('-- repeated6:', typeof repeated6, repeated6);         // repeated: string
+                                                
 
 // passing the wrong type for both parameters
 const repeated7 = repeater(true, undefined);

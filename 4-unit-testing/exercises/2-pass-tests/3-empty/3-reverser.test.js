@@ -5,7 +5,10 @@
 /**
  *
  */
-__;
+const reverser = ( str = '') => {
+  return str.split('').reverse().join('');
+}
+;
 
 describe('reverser: reverses a string', () => {
   it('reverses one letter', () => {
