@@ -14,6 +14,17 @@ while (!isValid) {
   );
 
   /* -- BEGIN: validate input -- */
+  if(userInput){
+    const nthLetter = userInput[index - 1];
+    if(nthLetter && (nthLetter.toLowerCase() === 'e')){
+      validInput = userInput;
+       isValid = true;
+    }else{
+      alert ('Invalid input. Please try again.');
+    }
+  } else {
+    alert('Invalid input. Please try again');
+  }
   /* -- END: validate input -- */
 }
 
