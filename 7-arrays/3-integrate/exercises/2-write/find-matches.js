@@ -41,7 +41,7 @@ const matches = search(strings, query);
 console.log(matches);
 
 // -- generate a message for the user --
-let message = `query: ${query}
+let message = `query: ${query}\n\nMatches:\n${matches.join('\n')};
 
 matches:
 - ${matches.join('\n- ')}`;
