@@ -7,6 +7,10 @@ let b = ['x', 'y', 'z'];
 const bReference = b;
 let temp;
 
+temp = a;
+a = b;
+b = temp;
+
 // -- swap reference types (write this code) --
 
 // -- assert the references (this is correct) --

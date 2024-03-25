@@ -1,7 +1,7 @@
 import {
-  readString,
-  readSelection,
   display,
+  readSelection,
+  readString,
 } from '../../../../../../../lib/dom-io.js';
 
 import { reverse } from './utils/reverse.js';
@@ -21,12 +21,12 @@ const reverseWordOrPhrase = () => {
 
     for (const word of splitText) {
       /// BEGIN: refactor this to call `reverse`
-      // const reversedWord = reverse(__);
+      const reversedWord = reverse(word);
 
-      let reversedWord = '';
-      for (const char of word) {
-        reversedWord = char + reversedWord;
-      }
+      // let reversedWord = '';
+      // for (const char of word) {
+      //   reversedWord = char + reversedWord;
+      // }
       /// END: refactor
 
       newWords.push(reversedWord);
@@ -35,13 +35,14 @@ const reverseWordOrPhrase = () => {
     reversed = newWords.join(' ');
   } else {
     /// BEGIN: refactor this to call `reverse`
-    // reversed = reverse(__);
+    reversed = reverse(userText);
 
-    let reversedText = '';
-    for (const char of userText) {
-      reversedText = char + reversedText;
-    }
-    reversed = reversedText;
+    // let reversedText = '';
+    // for (const char of userText) {
+    //   reversedText = char + reversedText;
+    // }
+    // reversed = reversedText;
+
     /// END: refactor
   }
 

@@ -1,8 +1,8 @@
-import { readString, display } from '../../../../../../../lib/dom-io.js';
+import { display, readString } from '../../../../../../../lib/dom-io.js';
 
 import { removeCharacters } from './utils/remove-characters.js';
 
-const removeVowels = () => {
+export const removeVowels = () => {
   debugger;
 
   // --- read user input ---
@@ -10,7 +10,12 @@ const removeVowels = () => {
 
   // --- remove all vowels from the input ---
   //  use `removeCharacters` to write this step of the program
-  ___;
+
+  const removedVowels = (input) => {
+    return input.toLowerCase().replace(/[aeiou]/gi, '');
+  }
+
+  const noVowels = removedVowels(userText);
 
   // --- display the input with no vowels ---
   display('removified', noVowels);

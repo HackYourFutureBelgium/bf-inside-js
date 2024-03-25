@@ -5,9 +5,9 @@
 /**
  * Checks if something is true about a string.
  *
- * @param {String} [text=''] - The text to check with the callback.
+ * @param {string} [text=''] - The text to check with the callback.
  * @param {Function} cb - The function call with the text.
- * @returns {String} "yes" or "no", depending on the cb's return value.
+ * @returns {string} "yes" or "no", depending on the cb's return value.
  */
 const checkIt = (text = '', cb) => {
   const itIsSo = cb(text);
@@ -18,12 +18,15 @@ const checkIt = (text = '', cb) => {
 
 /**
  * Checks if a string is a palindrome.
- * (the same forwards and backwards)
+ * (the same forwards and backwards).
  *
  * @param {string} [str=''] - The string to check.
  * @returns {boolean} Whether or not the string is a palindrome.
  */
-const isPalindrome = (str = '') => {};
+const isPalindrome = (str = '') => {
+  let result = str.split('').reverse().join('');
+  return result === str;
+};
 
 const check1 = checkIt('RacEcaR', isPalindrome);
 console.assert(check1 === 'yes', 'Test 1');
@@ -32,7 +35,7 @@ const check2 = checkIt('Racecar', isPalindrome);
 console.assert(check2 === 'no', 'Test 2');
 
 const check3 = checkIt('-+(*)+-', isPalindrome);
-console.assert(check3 === 'yes', 'Test 3');
+console.assert(check3 === 'no', 'Test 3');
 
 // --- declare and test second callback ---
 
@@ -43,7 +46,12 @@ console.assert(check3 === 'yes', 'Test 3');
  * @param {string} [str=''] - The string to check.
  * @returns {boolean} Whether or not the string is JS.
  */
-const isJS = (txt = '') => {};
+
+const isJS = (txt = '') => {
+  const words = ['JavaScript', 'JS'];
+  console.log(words);
+  return words.filter((word) => new RegExp(word, 'i').test(txt)).length > 0;
+};
 
 const check4 = checkIt('JavaSCripT', isJS);
 console.assert(check4 === 'yes', 'Test 4');

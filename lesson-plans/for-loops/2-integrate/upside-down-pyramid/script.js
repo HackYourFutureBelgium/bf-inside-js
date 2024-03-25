@@ -10,8 +10,8 @@ document.getElementById('pyramid-it').addEventListener('click', () => {
   let pyramid = "";
 
   for (let i = 0; i < userInput.length; i++) {
-    let row = userInput.substr(i) + '\n';
-    pyramid += row;
+    let str = userInput.substr(i) + '\n';
+    pyramid += str;
   }
 
   // display the pyramid

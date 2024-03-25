@@ -7,9 +7,9 @@ console.log('-- begin --');
  *
  * @param text
  * @param cutoff
- * @_ {string}
- * @_ {_} _ - _
- * @_ {_} _
+ * @_ {string} 
+ * @_ { Number_} _ - _
+ * @_ { string_} _ 
  */
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {

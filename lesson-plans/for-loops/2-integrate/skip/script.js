@@ -14,7 +14,6 @@ document.getElementById('skip-them').addEventListener('click', () => {
     newText += userInput[i]
   }
 
-
   // display the skipped string
   display('skipped-output', newText)
 });
