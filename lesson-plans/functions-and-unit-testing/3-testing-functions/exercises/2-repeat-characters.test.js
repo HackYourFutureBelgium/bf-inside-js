@@ -14,7 +14,6 @@ const repeatCharacters = (text, repeats) => {
   }
    return toRepeat;
 };
-
 describe('repeatCharacters: repeats each character in a string', () => {
   it('repeats characters 0 times', () => {
     const returned = repeatCharacters('hoy!', 0);

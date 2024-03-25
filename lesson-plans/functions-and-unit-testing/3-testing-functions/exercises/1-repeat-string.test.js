@@ -9,10 +9,11 @@
  */
 const repeatString = (text, repeats) => {
   let toRepeat = '';
-  for ( let i = 0; i < repeats ; i++) {
+  for(let i = 0; i < repeats; i++){
     toRepeat = toRepeat + text;
   } return toRepeat;
 }
+
 
 describe('repeatString: repeats a string a specific number of times', () => {
   it('repeats a string 0 times', () => {

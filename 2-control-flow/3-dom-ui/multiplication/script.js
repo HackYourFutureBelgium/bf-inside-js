@@ -1,4 +1,4 @@
-import {readNumber, displayString} from '../../../lib/dom-io.js';
+import {readNumber, display} from '../../../../../lib/dom-io.js';
 
 document.getElementById('do-math').addEventListener('click', () => {
   debugger;
@@ -12,5 +12,5 @@ console.log("toRepeat");
 
 
   // display the product
-  displayString('product', 'a * b -> ' + result);
+  display('product','a * b -> ' + result);
 });
