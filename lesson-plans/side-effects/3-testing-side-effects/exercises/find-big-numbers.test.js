@@ -14,7 +14,9 @@
  * @example
  * findBigNumbers([-2, -1, 0, 1, 2], 0); // [0, 1, 2]
  */
-const findBigNumbers = () => {};
+const findBigNumbers = (numbers = [], big = 0)=> {
+  return numbers.filter((number) => number >= big);
+}
 
 describe('findBigNumbers: finds all the big numbers in an array', () => {
   describe('the function finds big numbers:', () => {
@@ -52,10 +54,12 @@ describe('findBigNumbers: finds all the big numbers in an array', () => {
   });
   describe('there are no side-effects', () => {
     it('returns a new array', () => {
-      writeThisTest;
+      const actual = findBigNumbers([-2, -1, 0, 1, 2]);
+      expect(actual).toEqual([0, 1, 2]);
     });
     it('does not modify the original array', () => {
-      writeThisTest;
+      const actual = findBigNumbers([-2, -1, 0, 1, 2]);
+      expect(actual).toEqual([0, 1, 2]);
     });
   });
 });

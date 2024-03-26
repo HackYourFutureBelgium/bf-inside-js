@@ -5,4 +5,6 @@
  * @param {string} [toCheck=''] - The string that might be a palindrome.
  * @returns {boolean} Is the string a palindrome?
  */
-export const isPalindrome = (toCheck = '') => {};
+export const isPalindrome = (toCheck = '') => {
+  return toCheck.split('').reverse().join('') === toCheck
+};

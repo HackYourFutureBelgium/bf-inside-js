@@ -1,6 +1,7 @@
 import { readBoolean, display } from '../../../../../lib/dom-io.js';
 
-import { catAdvisor } from './utils/cat-advisor.js';
+import { priceAdvisorAdvisor } from './utils/cat-advisor.js';
+import { priceAdvisor } from './utils/price-advisor.js';
 
 // once when the script is loaded
 debugger;
@@ -12,13 +13,13 @@ const giveAdvice = () => {
 
   // read the user's boolean input from the UI
 
-  const likesCats = readBoolean('likes-cats');
-  const isAllergic = readBoolean('is-allergic');
-  const ownsOne = readBoolean('owns-one');
+  const likePrice = readBoolean('likes-cats');
+  const happyPrice = readBoolean('is-allergic');
+  const noMatter = readBoolean('owns-one');
 
   // generate good advice
 
-  const advice = catAdvisor(likesCats, isAllergic, ownsOne);
+  const advice = priceAdvisor(likePrice, happyPrice, noMatter);
 
   // share your advice with the user
 
