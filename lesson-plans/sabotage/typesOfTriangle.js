@@ -10,11 +10,11 @@ var triangleType = function(nums) {
   if(a === b && b === c){
     return "equilateral";
   }
-  else if(a === b || b === c) {
+  else if(a === b || b === c || a === c) {
     return "isosceles";
   }
   else {
-    return "scalene"
+    return "scalene";
     }
   }
   return "none";
@@ -24,7 +24,7 @@ var triangleType = function(nums) {
 
 
 describe('typesOfTriangle: checking if it is triangle or not', () => {
-  it('it is not a triangle', () => {
+  it('if it is not a triangle', () => {
     const returned = triangleType([2]);
     expect(returned).toEqual('none');
   });

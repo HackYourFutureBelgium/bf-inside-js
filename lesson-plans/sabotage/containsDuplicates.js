@@ -17,7 +17,7 @@ var containsDuplicate = function(nums) {
 };
 
 
-describe('containsDuplicates: contains duplicate numbers', () => {
+describe('containsDuplicate: contains duplicate numbers', () => {
   it('empty string does not contain any number', () => {
     const returned = containsDuplicate('', false);
     expect(returned).toEqual(false);

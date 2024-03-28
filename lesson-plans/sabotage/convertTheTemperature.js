@@ -20,7 +20,7 @@ var convertTemperature = function(celsiusArray) {
    return results;
 };
 
-describe('convertTemperature: celsius convert into kelvin and fahrenheit', () => {
+describe('convertTemperature: celsius converts into kelvin and fahrenheit', () => {
   it('if temperature is 0 degree celsius', () => {
     const returned = convertTemperature([0]);
     expect(returned).toEqual([[273.15, 32]]);
@@ -34,5 +34,10 @@ describe('convertTemperature: celsius convert into kelvin and fahrenheit', () =>
   it('if temperature is 122.11 degree celsius', () => {
     const returned = convertTemperature([122.11]);
     expect(returned).toEqual([[395.26, 251.798]]);
+  });
+
+  it('if temperature is not given', () => {
+    const returned = convertTemperature([]);
+    expect(returned).toEqual([]);
   });
 });
