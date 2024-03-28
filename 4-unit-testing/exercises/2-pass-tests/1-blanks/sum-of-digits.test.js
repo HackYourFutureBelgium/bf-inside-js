@@ -10,15 +10,15 @@
  * @returns {number} The sum of all digits in toSum.
  */
 const sumOfDigits = (toSum = 0) => {
-  const _ = String(toSum);
+  const stringedNumber= String(toSum);
   const onlyDigits = stringedNumber.replaceAll('.', '').replaceAll('-', '');
   let sum = 0;
-  for (const character of _) {
-    const num = _(character);
-    __;
+  for (const character of onlyDigits) {
+    const num = Number(character);
+    sum += num;
   }
 
-  return _ ? -sum : sum;
+  return toSum < 0 ? -sum : sum;
 };
 
 describe('sumOfDigits: sums the digits in a number', () => {

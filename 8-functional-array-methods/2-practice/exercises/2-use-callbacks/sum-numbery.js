@@ -23,10 +23,10 @@ export const sumNumbery = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const areAllStrings = arr._(_); // a boolean value
+  const areAllStrings = arr.every(isString); // a boolean value
   if (!areAllStrings) {
-    return _;
+    return 0;
   }
 
-  return arr._(_)._(_)._(_, _);
+  return arr.map(castToNumber).filter(isNotNaN).reduce(sumNumbers, 0);
 };

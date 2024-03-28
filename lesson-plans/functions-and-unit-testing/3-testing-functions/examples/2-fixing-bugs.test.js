@@ -22,7 +22,7 @@
 const reverseString = (str) => {
   let backwards = '';
   for (const char of str) {
-    backwards += char;
+    backwards = char + backwards;
   }
   return backwards;
 };

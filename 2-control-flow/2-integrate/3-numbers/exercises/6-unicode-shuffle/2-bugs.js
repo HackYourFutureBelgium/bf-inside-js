@@ -27,7 +27,7 @@ while (true) {
       if (unicodeShiftInput === null || unicodeShiftInput === '') {
         alert('enter something');
       } else {
-        const unicodeShift = Number(unicodeShiftInput);
+         unicodeShift = Number(unicodeShiftInput);
 
         if (Number.isNaN(unicodeShift)) {
           alert('"' + unicodeShiftInput + '" is not a number');

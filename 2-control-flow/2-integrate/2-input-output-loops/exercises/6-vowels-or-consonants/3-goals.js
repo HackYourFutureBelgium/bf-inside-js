@@ -14,6 +14,9 @@ while (true) {
   userInput = prompt('enter a word to filter:');
 
   /* -- BEGIN: validate input -- */
+  if (userInput !== null && userInput !== ''){
+    break;
+  }
 
   /* -- END: validate input -- */
 }
@@ -25,13 +28,18 @@ const removeVowels = confirm(`what would you like to remove from "${userInput}"?
 
 let toRemove = '';
 if (removeVowels) {
-  toRemove = 'AEIOU';
+  toRemove = 'aeiouAEIOU';
 } else {
-  toRemove = 'BCDFGHJKLMNPQRSTVWXYZ';
+  toRemove = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
 }
 
 let filteredInput = '';
 /* -- BEGIN: filter input -- */
+for(let character of userInput){
+  if (!toRemove.includes(character)){
+    filteredInput += character
+  }
+}
 
 /* -- END: filter input -- */
 

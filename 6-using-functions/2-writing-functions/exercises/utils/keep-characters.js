@@ -5,4 +5,12 @@
  * @param {_} [_=_] - The characters to keep.
  * @returns {_} Text with only the given characters still in it.
  */
-export const keepCharacters = () => {};
+export const keepCharacters = (text = '', chars = '') => {
+  let newText = '';
+  for(const char of text){
+    if (chars.indexOf(char) !== -1){
+    newText += char;
+    }
+  }
+  return newText;
+};

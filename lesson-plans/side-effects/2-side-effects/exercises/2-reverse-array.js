@@ -9,7 +9,10 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {number[]} [arr=[]] - __
  * @returns {number[]} __
  */
-const reverseArray = () => {};
+const reverseArray = (arr) => {
+  const arrCopy = [...arr];
+  return arrCopy.reverse();
+};
 
 const _1_arg = [1, 2, 3];
 const _1_returned = reverseArray(_1_arg);

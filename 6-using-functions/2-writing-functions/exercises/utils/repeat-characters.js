@@ -5,4 +5,10 @@
  * @param {_} [_=_] - How many times to repeat each character.
  * @returns {_} The original text with each character repeated.
  */
-export const repeatCharacters = () => {};
+export const repeatCharacters = ( str = '',repetations = 1 ) => {;
+let newStr = '';
+for (const char of str){
+  newStr += char.repeat(repetations);
+}
+return newStr;
+}

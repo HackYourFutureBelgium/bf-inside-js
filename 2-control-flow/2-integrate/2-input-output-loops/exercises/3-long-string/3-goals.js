@@ -5,6 +5,7 @@
 let userInput = '';
 while (userInput === '') {
   /* -- BEGIN: validate input -- */
+  userInput = prompt('Please enter some text:')
   /* -- END: validate input -- */
 }
 

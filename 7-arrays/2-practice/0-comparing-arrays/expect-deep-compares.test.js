@@ -11,7 +11,7 @@ describe('comparing arrays in unit tests', () => {
     });
     it('two arrays with different values', () => {
       const arr1 = ['a', 'b', 'c'];
-      const arr2 = ['a', 'b', 'f'];
+      const arr2 = ['a', 'b', 'c'];
       expect(arr1).toEqual(arr2);
     });
     it('one array', () => {

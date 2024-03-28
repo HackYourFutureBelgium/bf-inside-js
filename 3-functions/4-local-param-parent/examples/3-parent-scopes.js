@@ -20,20 +20,20 @@ let parent1 = 'a';
 let parent2 = 'b';
 
 const fromParents1 = usesParents();
-console.log('fromParents1:', fromParents1);
-console.log('parent1:', parent1);
-console.log('parent2:', parent2, '\n');
+console.log('fromParents1:', fromParents1);   // a- , - 
+console.log('parent1:', parent1);             //a-
+console.log('parent2:', parent2, '\n');      //- 
 
 parent1 = '|';
 parent2 = `${parent2}|`;
 
-console.log('parent1:', parent1);
-console.log('parent2:', parent2, '\n');
+console.log('parent1:', parent1);              // |
+console.log('parent2:', parent2, '\n');        // -|
 
 const fromParents2 = usesParents();
-console.log('fromParents2:', fromParents2);
-console.log('parent1:', parent1);
-console.log('parent2:', parent2, '\n');
+console.log('fromParents2:', fromParents2);     //  |-, -
+console.log('parent1:', parent1);               // |- 
+console.log('parent2:', parent2, '\n');         // -       
 
 parent1 = `${parent1}|`;
 parent2 = `${parent2}|`;

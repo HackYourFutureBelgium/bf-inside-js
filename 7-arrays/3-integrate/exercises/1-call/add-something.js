@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-import { __ } from '../utils/add-to-numbers.js';
+import {addToNumbers} from '../utils/add-to-numbers.js';
 
 /* ===== main program (use functions) ===== */
 
@@ -57,7 +57,7 @@ console.log(numberToAdd);
 // -- add the new value to each number --
 // declare a new variable named `addedNumbers`
 //  assign it the return value from calling `addToNumbers`
-_;
+const addedNumbers = addToNumbers(originalNumbers, numberToAdd);
 console.log(addedNumbers);
 
 // -- generate a message for the user --
@@ -66,6 +66,10 @@ let after = 'after: ';
 for (let i = 0; i < originalNumbers.length; i++) {
   before += `${originalNumbers[i]}, `;
   after += `${addedNumbers[i]}, `;
+  if (i < originalNumbers.length -1){
+    before += ', ';
+    after += ', ' 
+  }
 }
 
 const message = `${before}\n${after}`;

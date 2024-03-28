@@ -3,10 +3,11 @@
 console.log('-- begin --');
 
 /**
- * _
+ * check if a string is palindrom
+ * palindrome means a value that reads the same from backward or forward. 
  *
- * @_ {_} _ - _
- * @_ {_}  _
+ * @param{string} toCheck - the string to check
+ * @return{string}
  */
 const isPalindrome = (toCheck) => {
   let reversed = '';

@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-import { filterByLength } from '__';
+import { filterByLength } from '../utils/filter-by-length.js';
 
 /* ===== main program (use functions) ===== */
 
@@ -16,9 +16,9 @@ then enter a desired length
 // -- gather numbers --
 const allInputs = [];
 let notDone = true;
+
 while (notDone) {
   const input = prompt('enter the next string or cancel to finish');
-
   if (input === null) {
     notDone = false;
   } else {
@@ -46,11 +46,11 @@ console.log(lengthToKeep);
 // -- add the new value to each number --
 // declare a new variable named `filtered`
 //  assign it the return value from calling `filterByLength`
-_;
+const filtered = filterByLength(allInputs. lengthToKeep);
 console.log(filtered);
 
 // -- generate a message for the user --
-let message = '';
+let message = 'Filtered strings:\n';
 for (let i = 0; i < filtered.length; i++) {
   message += `- "${filtered[i]}"\n`;
 }

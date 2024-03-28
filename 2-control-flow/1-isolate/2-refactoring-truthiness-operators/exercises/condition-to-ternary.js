@@ -7,12 +7,12 @@ console.log('-- begin --');
 // refactor this code to use a _?_:_ instead of a conditional
 
 // try different values and different types
-const isLoggedIn = _;
-const secretInformation = _;
-const warningMessage = _;
+const isLoggedIn = false;
+const secretInformation = 'you are hungry';
+const warningMessage = 'you are not hungry';
 console.log(isLoggedIn, secretInformation, warningMessage);
 
-let toDisplay;
+let toDisplay = isLoggedIn ? secretInformation : warningMessage;
 if (isLoggedIn) {
   toDisplay = secretInformation;
 } else {

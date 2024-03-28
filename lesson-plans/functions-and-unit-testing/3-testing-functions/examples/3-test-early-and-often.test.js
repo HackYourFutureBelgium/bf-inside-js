@@ -18,7 +18,12 @@
  * @param {string} str - The string to reverse.
  * @returns {string} The input string, but backwards.
  */
-const reverseString = (str) => {};
+const reverseString = (str) => {
+  if (typeof str !== 'string'){
+    return;
+  }
+  return str.split('').reverse().join('');
+};
 
 describe('reverseString: reverses any string', () => {
   it('reverses an empty string', () => {
